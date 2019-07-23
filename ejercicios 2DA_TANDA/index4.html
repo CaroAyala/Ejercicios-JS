@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora'));
+            var cantHorasxMes = parseFloat(prompt('Ingrese la cantidad de horas trabajadas'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese los años de antiguedad'));
+            var cantSeguros = parseFloat(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorSeguroCaro = parseFloat(prompt('Ingrese el valor del seguro más caro'));
+
+            var sueldoMensual = valorHora * cantHorasxMes;
+            var bonoSeguroCaro = (valorSeguroCaro * 50) / 100;
+            var bonoSegurosVendidos = ((sueldoMensual * 20) / 100) * cantSeguros;
+            var bonoAniosAntiguedad = ((sueldoMensual * 10) / 100) * aniosAntiguedad;
+
+            var sueldoMensualTotal = sueldoMensual + bonoSeguroCaro + bonoSegurosVendidos + bonoAniosAntiguedad;
+
+            var promedioHora = sueldoMensualTotal / cantHorasxMes;
+
+            document.write('El sueldo total por mes es: ' + sueldoMensualTotal + ' - ');
+            document.write('El valor promedio de horas es: ' + promedioHora + ' ');
+        </script>
+    </head>
+    <body></body>
+</html>

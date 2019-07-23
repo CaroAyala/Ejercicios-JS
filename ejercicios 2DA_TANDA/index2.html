@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var valorHora = parseFloat(prompt('Ingrese el valor de la hora'));
+            var cantidadHoras = parseFloat(prompt('Ingrese la cantidad de horas trabajadas'));
+            var aniosAntiguedad = parseFloat(prompt('Ingrese los años de antigüedad que tiene en la empresa'));
+
+            var sueldoMensual = valorHora * cantidadHoras;
+            var sueldoAnual = sueldoMensual * 12;
+            var premio = ((sueldoAnual * 5) / 100) * aniosAntiguedad;
+            var sueldoAnualMasPremio = sueldoAnual + premio;
+
+            document.write('Su sueldo mensual es de: $ ' + sueldoMensual + ' - ');
+            document.write('Su sueldo anual es de: $ ' + sueldoAnualMasPremio + ' ');
+        </script>
+    </head>
+    <body></body>
+</html>

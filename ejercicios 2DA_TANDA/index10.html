@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var valorA = parseFloat(prompt('Ingrese valor numérico A'));
+            var valorB = parseFloat(prompt('Ingrese valor numérico B'));
+            var operador = prompt('Ingrese la operación que desea realizar +, -, *, /, %');
+
+            var resultado;
+
+            switch (operador) {
+                case '+':
+                    resultado = valorA + valorB;
+                    document.write('Ud eligió suma, el resultado es: ' + resultado);
+                    break;
+                case '-':
+                    resultado = valorA - valorB;
+                    document.write('Ud eligió resta, el resultado es: ' + resultado);
+                    break;
+                case '*':
+                    resultado = valorA * valorB;
+                    document.write('Ud eligió multiplicación, el resultado es: ' + resultado);
+                    break;
+                case '/':
+                    resultado = valorA / valorB;
+                    document.write('Ud eligió división, el resultado es: ' + resultado);
+                    break;
+                case '%':
+                    resultado = valorA % valorB;
+                    document.write('Ud eligió , el resultado es: ' + resultado);
+                    break;
+                default:
+                    document.write('Ud no eligió ninguna de las operaciones aceptadas');
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

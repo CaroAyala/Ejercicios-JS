@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var ladoA = parseFloat(prompt('Ingrese el valor del lado A del triángulo'));
+            var ladoB = parseFloat(prompt('Ingrese el valor del lado B del triángulo'));
+            var ladoC = parseFloat(prompt('Ingrese el valor del lado C del triángulo'));
+
+            if (ladoA == ladoB) {
+                if (ladoB == ladoC) {
+                    document.write('El triángulo es equilátero');
+                }
+            }
+            if (ladoA == ladoB) {
+                if (ladoB != ladoC) {
+                    document.write('El triángulo es isósceles');
+                }
+            }
+            if (ladoA != ladoB) {
+                if (ladoB != ladoC) {
+                    document.write('El triángulo es escaleno');
+                }
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
