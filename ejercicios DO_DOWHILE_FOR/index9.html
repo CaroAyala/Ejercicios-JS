@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var nota;
+            var cantidadAprobados = 0;
+            var cantidadDesaprobados = 0;
+            var sumaNota = 0;
+
+            do {
+                do {
+                    nota = parseFloat(prompt('Ingrese una nota mayor o igual a 1 y menor o igual a 10'));
+                    if (nota < 1 || nota > 10) {
+                        alert('El número ingresado no es válido');
+                    }
+                } while (nota > 1 || nota < 10);
+
+                if (nota >= 4) {
+                    cantidadAprobados++;
+                } else {
+                    cantidadDesaprobados++;
+                }
+
+                sumaNota = sumaNota + nota;
+
+                var r = confirm('¿desea seguir ingresando notas?');
+            } while (r);
+
+            var cantidadTotal = cantidadAprobados + cantidadDesaprobados;
+            var promedioTotal = sumaNota / cantidadTotal;
+            var porcentajeAprobados = (cantidadAprobados / cantidadTotal) * 100;
+
+            document.write(cantidadAprobados + ' ' + 'cantidad de aprobados' + '</br>');
+            document.write(cantidadDesaprobados + ' ' + 'cantidad de desaprobados' + '</br>');
+            document.write(promedioTotal + ' ' + 'el promedio total de notas' + '</br>');
+            document.write(porcentajeAprobados + ' ' + 'el porcentaje de alumno aprobados' + '</br>');
+        </script>
+    </head>
+    <body></body>
+</html>

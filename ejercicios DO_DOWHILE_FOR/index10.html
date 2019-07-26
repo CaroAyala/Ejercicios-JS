@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var numero;
+            var cantidadMultiplosDe4 = 0;
+            var sumatoriaMultiplosDe7 = 0;
+            var cantidadValoresImpares = 0;
+            var sumatoriaValoresPares = 0;
+
+            do {
+                do {
+                    numero = parseInt(prompt('ingrese un numero'));
+                    if (isNaN(numero)) {
+                        alert('EL VALOR INGRESADO NO ES UN NUMERO');
+                    }
+                } while (isNaN(numero));
+                if (numero % 4 == 0) {
+                    cantidadMultiplosDe4++;
+                }
+                if (numero % 7 == 0) {
+                    sumatoriaMultiplosDe7 += numero;
+                }
+                if (numero % 2 != 0) {
+                    cantidadValoresImpares++;
+                }
+                if (numero % 2 == 0) {
+                    sumatoriaValoresPares += numero;
+                }
+
+                var r = confirm('desea seguir ingresando numeros?');
+            } while (r);
+
+            document.write(cantidadMultiplosDe4 + ' ' + 'es la cantidad de múltiplos de 4 <br/>');
+            document.write(sumatoriaMultiplosDe7 + ' ' + 'es la sumatoria de múltiplos de 7 <br/>');
+            document.write(cantidadValoresImpares + ' ' + 'es la cantidad de valores impares <br/>');
+            document.write(sumatoriaValoresPares + ' ' + 'es la sumatoria valores pares <br/>');
+        </script>
+    </head>
+    <body></body>
+</html>

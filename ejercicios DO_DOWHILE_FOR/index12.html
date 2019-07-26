@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            var rangoMenor = parseFloat(prompt('Ingrese el valor del rango menor'));
+            var rangoMayor = parseFloat(prompt('Ingrese el valor del rango mayor'));
+            do {
+                var numero = prompt('Ingrese un numero');
+
+                if (numero > rangoMenor && numero < rangoMayor) {
+                    document.write(numero + ' El número está dentro del rango' + '</br>');
+                    if (numero % 2 != 0) {
+                        document.write(numero + ' El número es impar y está dentro del rango' + '</br>');
+                    }
+                    if (numero % 2 == 0) {
+                        document.write(numero + ' El número es par y no está dentro del rango' + '</br>');
+                    }
+                } else {
+                    alert('Los números ingresados no están dentro del rango');
+                }
+                var r = confirm('Desea seguir ingresando numeros?');
+            } while (r);
+        </script>
+    </head>
+    <body></body>
+</html>
