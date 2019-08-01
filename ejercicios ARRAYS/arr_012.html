@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            let concreteAndGold = [];
+
+            concreteAndGold.push('T-Shirt');
+            concreteAndGold.push('Run');
+            concreteAndGold.push('Make It Right');
+            concreteAndGold.push('The Sky Is a Neighborhood');
+            concreteAndGold.push('La Dee Da');
+            concreteAndGold.push('Dirty Water');
+            concreteAndGold.push('Arrows');
+            concreteAndGold.push('Happy Ever After (Zero Hour)');
+            concreteAndGold.push('Sunday Rain');
+            concreteAndGold.push('The Line');
+            concreteAndGold.push('Concrete and Gold');
+
+            let song1 = concreteAndGold.shift();
+            let song2 = concreteAndGold.pop();
+            console.log(song1 + ' - ' + song2);
+
+            concreteAndGold.unshift('T-Shirt');
+            concreteAndGold.push('Concrete and Gold');
+            console.log(concreteAndGold);
+        </script>
+    </head>
+    <body></body>
+</html>
