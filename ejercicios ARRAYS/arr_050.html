@@ -17,14 +17,12 @@
                 'You Don’t Know JS',
                 'JavaScript Allongé: The Six Edition'
             ];
-            let totalLibros = 0;
 
-            librosDeJS.forEach(function(libro) {
-                console.log(libro);
-                totalLibros++;
+            let titulos = librosDeJS.reduce(function(acumulador, libro) {
+                return acumulador + '<l¡>' + libro + '<l¡>';
             });
 
-            console.log('* Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros *');
+            console.log('<ul>' + titulos + '<ul>');
         </script>
     </head>
     <body></body>

@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <script>
-            var notasDeTPs = [4, 7, 8, 5, 10];
-            var notaFinal = 0;
+            let numbers = [6, 1, 34, 94, 3, 17];
+            let sum = 0;
 
-            for (let i = 0; i < notasDeTPs.length; i++) {
-                notaFinal = notaFinal + notasDeTPs[i] / 5;
-            }
+            numbers.forEach(function(number) {
+                sum = sum + number;
+            });
 
-            console.log(notaFinal);
+            console.log(sum);
         </script>
     </head>
     <body></body>

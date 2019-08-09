@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <script>
-            var notasDeTPs = [4, 7, 8, 5, 10];
-            var notaFinal = 0;
+            let numeros = [1, 2, 3, 4, 5];
 
-            for (let i = 0; i < notasDeTPs.length; i++) {
-                notaFinal = notaFinal + notasDeTPs[i] / 5;
-            }
+            let numerosMasDiez = numeros.map(function(numero) {
+                return numero + 10;
+            });
 
-            console.log(notaFinal);
+            console.log(numeros);
+            console.log(numerosMasDiez);
         </script>
     </head>
     <body></body>

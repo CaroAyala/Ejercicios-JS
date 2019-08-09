@@ -10,6 +10,7 @@
             let playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
 
             let playlistCompleta = playlistNirvana.concat(playlistFoo);
+            console.log(playlistCompleta);
 
             console.log(playlistNirvana[0]);
             console.log(playlistNirvana[1]);
@@ -18,12 +19,12 @@
 
             let i = 0;
             while (i < playlistFoo.length) {
-                console.log(playlistFoo[i]);
+                console.log('*' + playlistFoo[i]);
                 i++;
             }
 
-            for (let i = 0; i < playlistCompleta.length; i++) {
-                console.log(playlistCompleta[i]);
+            for (i = 0; i < playlistCompleta.length; i++) {
+                console.log('-' + playlistCompleta[i]);
             }
         </script>
     </head>

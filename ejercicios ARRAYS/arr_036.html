@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <script>
-            var notasDeTPs = [4, 7, 8, 5, 10];
-            var notaFinal = 0;
+            let frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
 
-            for (let i = 0; i < notasDeTPs.length; i++) {
-                notaFinal = notaFinal + notasDeTPs[i] / 5;
-            }
+            let frasesExclamadas = frases.map(function(frase) {
+                return '¡' + frase + '!';
+            });
 
-            console.log(notaFinal);
+            console.log(frases);
+            console.log(frasesExclamadas);
         </script>
     </head>
     <body></body>

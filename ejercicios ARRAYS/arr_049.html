@@ -6,12 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <script>
-            var notasDeTPs = [4, 7, 8, 5, 10];
-            var notaFinal = 0;
-
-            for (let i = 0; i < notasDeTPs.length; i++) {
-                notaFinal = notaFinal + notasDeTPs[i] / 5;
-            }
+            let notasDeTPs = [4, 7, 8, 5, 10];
+            let notaFinal = notasDeTPs.reduce(function(total, nota) {
+                return total + nota / 5;
+            });
 
             console.log(notaFinal);
         </script>
