@@ -5,7 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
-        <script></script>
+        <script>
+            var numeros = [5, 1, 7, 12, 5, 2, 9, 0, 11, 9, 11];
+
+            var sinRepetidos = numeros.reduce(function(repetidos, numero) {
+                if (repetidos.indexOf(numero) == -1) {
+                    repetidos.push(numero);
+                }
+                return repetidos;
+            }, []);
+
+            console.log(sinRepetidos);
+        </script>
     </head>
     <body></body>
 </html>

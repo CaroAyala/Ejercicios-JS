@@ -18,11 +18,16 @@
                 'JavaScript Allongé: The Six Edition'
             ];
 
-            let titulos = librosDeJS.reduce(function(acumulador, libro) {
-                return acumulador + '<l¡>' + libro + '<l¡>';
-            });
+            // let titulos = librosDeJS.reduce(function(acumulador, libro) {
+            //     return acumulador + '<l¡>' + libro + '<l¡>';
+            // });
 
-            console.log('<ul>' + titulos + '<ul>');
+            var titulos = librosDeJS.reduce(function(listItems, item) {
+                listItems.push('<li>' + item + '</li>');
+                return listItems;
+            }, []);
+
+            console.log('<ul>' + titulos + '</ul>');
         </script>
     </head>
     <body></body>
