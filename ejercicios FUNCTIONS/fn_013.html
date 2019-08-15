@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            function exclamar(str) {
+                return '¡' + str + '!';
+            }
+
+            function unirNombre(nombre, apellido) {
+                return nombre + ' ' + apellido;
+            }
+
+            function saludar(nombre) {
+                return exclamar('Hola' + ' ' + nombre);
+            }
+
+            console.log(exclamar('hola') === '¡hola!');
+            console.log(exclamar('hola, mundo') === '¡hola, mundo!');
+
+            console.log(unirNombre('Ada', 'Lovelace') === 'Ada Lovelace');
+            console.log(unirNombre('Grace', 'Hopper') === 'Grace Hopper');
+
+            console.log(saludar('Ada') === '¡Hola Ada!');
+            console.log(saludar('Grace') === '¡Hola Grace!');
+        </script>
+    </head>
+    <body></body>
+</html>
