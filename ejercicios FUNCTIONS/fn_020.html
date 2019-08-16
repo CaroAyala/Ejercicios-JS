@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script>
+            // Crear una función con el nombre mostrarElNumeroMasGrande que acepte dos parámetros numéricos llamados numero1 y numero2
+
+            // La función tiene que retornar el mensaje:
+
+            // SI numero1 es mayor que numero2, retornar El número ${numero1} es más grande que ${numero2}
+            // SI numero2 es menor que numero1, retornar El número ${numero2} es más grande que ${numero1}
+            // SI numero1 es igual que numero2, retornar Los dos números son iguales
+            // Para comparar los dos números, hay que usar la función compararNumeros desarrollada en el ejercicio fn_019
+
+            // Probar la función en el siguiente código
+
+            function mostrarElNumeroMasGrande(numero1, numero2) {
+                function compararNumeros(numero1, numero2) {
+                    if (numero1 < numero2) {
+                        console.log('El número ' + numero2 + ' es más grande que ' + numero1);
+                        return;
+                    }
+                    if (numero2 < numero1) {
+                        console.log('El número ' + numero1 + ' es más grande que ' + numero2);
+                        return;
+                    }
+                    if (numero1 === numero2) {
+                        console.log('Los dos números son iguales');
+                        return;
+                    }
+                }
+                return compararNumeros(numero1, numero2);
+            }
+
+            mostrarElNumeroMasGrande(1, 5); // El número 5 es más grande que 1
+            mostrarElNumeroMasGrande(63, 27); // El número 63 es más grande que 27
+            mostrarElNumeroMasGrande(1, 1); // Los dos números son iguales
+        </script>
+    </head>
+    <body></body>
+</html>
